@@ -20,8 +20,8 @@
   },
   "repositories": [
     {
-      "type": "vcs",
+      "type": "git",
       "url": "https://github.com/saeedazizi/KeyValueStore"
     }
-  ],
+  ]
 }
