@@ -17,5 +17,11 @@
     "psr-4": {
       "Opilo\\KeyValue\\": "src/"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/saeedazizi/KeyValueStore"
+    }
+  ],
 }
