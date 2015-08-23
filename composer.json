@@ -1,0 +1,21 @@
+{
+  "name": "saeedazizi/KeyValueStore",
+  "description": "KeyValueStore tool for creating key value objects",
+  "authors": [
+    {
+      "name": "Saeed Azizi",
+      "email": "saeedazizi1369@yahoo.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Opilo\\KeyValue\\": "src/"
+    }
+  }
+}
