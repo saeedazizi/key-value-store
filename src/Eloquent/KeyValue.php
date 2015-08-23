@@ -1,6 +1,6 @@
 <?php
 
-namespace Vasles\Models;
+namespace Opilo\KeyValue\Eloquent;
 
 use Illuminate\Database\Eloquent\Model;
 

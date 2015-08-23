@@ -1,8 +1,8 @@
 <?php
 
-namespace Vasles\Services;
+namespace Opilo\KeyValue;
 
-use Vasles\Models\KeyValue;
+use Opilo\KeyValue\Eloquent\KeyValue;
 
 class KeyValueStore
 {

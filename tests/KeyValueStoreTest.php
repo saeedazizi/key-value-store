@@ -1,12 +1,10 @@
-<?php namespace Test\services;
+<?php
 
-use Test\TestCase;
-use Vasles\Models\KeyValue;
-use Vasles\Services\KeyValueStore;
+use Opilo\KeyValue\Eloquent\KeyValue;
+use Opilo\KeyValue\KeyValueStore;
 
-
-class KeyValueStoreTest extends TestCase {
-
+class KeyValueStoreTest extends PHPUnit_Framework_TestCase
+{
     /**
      * @var KeyValueStore
      */
