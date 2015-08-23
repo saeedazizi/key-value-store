@@ -17,11 +17,5 @@
     "psr-4": {
       "Opilo\\KeyValue\\": "src/"
     }
-  },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/saeedazizi/key-value-store"
-    }
-  ]
+  }
 }
