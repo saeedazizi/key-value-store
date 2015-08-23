@@ -1,6 +1,6 @@
 {
-  "name": "saeedazizi/KeyValueStore",
-  "description": "KeyValueStore tool for creating key value objects",
+  "name": "saeedazizi/key-value-store",
+  "description": "Key-Value-Store tool for creating key value objects",
   "authors": [
     {
       "name": "Saeed Azizi",
@@ -21,7 +21,7 @@
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/saeedazizi/KeyValueStore"
+      "url": "https://github.com/saeedazizi/key-value-store"
     }
   ]
 }
