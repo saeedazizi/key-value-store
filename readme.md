@@ -25,3 +25,9 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+## Config
+
+Add `\Opilo\KeyValue\Providers\KeyValueStoreProvider::class` to your `config/app.php`
+
+Add `php artisan vendor:publish --tag=public --force` to `post-install-cmd` and `post-update-cmd` section of your `composer.json` scripts
