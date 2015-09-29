@@ -1,6 +1,4 @@
-<?php
-
-namespace Opilo\KeyValue;
+<?php namespace Opilo\KeyValue;
 
 use Opilo\KeyValue\Eloquent\KeyValue;
 
@@ -44,7 +42,7 @@ class KeyValueStore
     {
         str_replace("%", "\\%", $keyPrefix);
         /** @var KeyValue[] $models */
-        $models = $this->keyValue->newQuery()->where('key', 'like', $keyPrefix . '%')->get();
+        $models    = $this->keyValue->newQuery()->where('key', 'like', $keyPrefix . '%')->get();
         $keyValues = [];
         foreach ($models as $model) {
             $keyValues[$model->key] = $model->value;
@@ -73,7 +71,7 @@ class KeyValueStore
 
     public function searchByRange($from, $to)
     {
-        $models = $this->keyValue->newQuery()->where('key','>=', $from)->where('key','<=', $to)->get();
+        $models    = $this->keyValue->newQuery()->where('key', '>=', $from)->where('key', '<=', $to)->get();
         $keyValues = [];
         foreach ($models as $model) {
             $keyValues[$model->key] = $model->value;
@@ -83,12 +81,9 @@ class KeyValueStore
 
     public function createOrUpdate($key)
     {
-        if($this->has($key))
-        {
+        if ($this->has($key)) {
             $this->update($key, 1);
-        }
-        else
-        {
+        } else {
             $this->create($key);
         }
     }
@@ -97,5 +92,4 @@ class KeyValueStore
     {
         $this->update($key, $n);
     }
-
 }
