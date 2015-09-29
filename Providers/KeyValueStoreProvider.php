@@ -11,12 +11,12 @@ class KeyValueStoreProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            dirname(dirname(__DIR__)) . '/config/key-value-store.php' => config_path('key-value-store.php'),
-        ], 'config');
+            dirname(__DIR__) . '/config/key-value-store.php' => config_path('key-value-store.php'),
+        ], 'public');
 
         $this->publishes([
-            dirname(dirname(__DIR__)) . '/migration' => database_path('/migrations'),
-        ], 'migrations');
+            dirname(__DIR__) . '/migration' => database_path('migrations'),
+        ], 'public');
     }
 
     public function register()
