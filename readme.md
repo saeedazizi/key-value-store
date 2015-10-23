@@ -1,4 +1,4 @@
-## Laravel PHP Framework
+## Key Value Store
 
 [![Build Status](https://travis-ci.org/saeedazizi/key-value-store.svg)](https://travis-ci.org/saeedazizi/key-value-store)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](http://opensource.org/licenses/MIT)
